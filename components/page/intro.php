@@ -9,11 +9,19 @@
 
 ?>
 
-
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+    <div class="sticky-head">
+	<img class="headerblacklogo" src="<?php bloginfo('template_url'); ?>/images/blacklogo.svg">
+       <a href="www.wardzdesign.dev/about">
+           <img class="headeraboutbutton" src="<?php bloginfo('template_url'); ?>/images/headeraboutbutton.svg"></a>
+	<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false"><?php esc_html_e( 'Top Menu', 'wardz-design' ); ?></button>
+	</div>
+    </nav>
     <div class="page-container">
+       <section class="panel">
         <div class="page-intro">
             <div class="intro-container">
-                <div id="hero">
+                <div id="hero" class="hero5">
                     <div class="headertext">
                         <h1 class="headertextleft">IMAGINATION</h1>
                         <h1 class="headertext headertextright">INVENTED</h1>
@@ -29,8 +37,8 @@
             </div>
 
         </div>
-        <div class="divider z-depth-3">
-        </div>
+        </section>
+        <section class="panel">
         <div class="page-portfolio">
             <div class="portfolio-container">
                 <div id="portfoliobackground">
@@ -41,7 +49,6 @@
                                 <div class="work-outer">
                                     <div class="work-inner sitea">
                                         <a href="http://wardzdesign.com/work/sitea/">
-                                            <span class="image-container" style="background-image: url(&quot;http://engzell.me/wp-content/uploads/2015/03/fitwhey-thumbnail-3-410x880.jpg&quot;);"></span>
                                         </a>
                                     </div>
                                 </div>
@@ -95,6 +102,7 @@
                 </div>
             </div>
         </div>
+        </section>
     </div>
 
     <script type="text/javascript">
@@ -115,3 +123,4 @@
 
         });
     </script>
+    

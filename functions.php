@@ -130,6 +130,15 @@ function wardz_design_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wardz_design_scripts' );
 
+function load_scripts() {
+    global $post;
+    wp_register_script( 'intro', get_template_directory_uri() . '/js/intro.js', array('jquery'));
+    wp_register_script( 'scrollify', get_template_directory_uri() . '/js/jquery.scrollify.js', array('jquery'));
+                wp_enqueue_script('intro');
+                wp_enqueue_script('scrollify');
+}
+add_action('wp_enqueue_scripts', 'load_scripts');
+
 /**
  * Implement the Custom Header feature.
  */

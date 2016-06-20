@@ -372,6 +372,7 @@ th {
     top: 32px;
     left: 32px;
 }
+
 .headeraboutbutton {
     display:block;
     position: absolute;
@@ -383,6 +384,7 @@ th {
     top: 32px;
     right: 32px;    
 }
+
 .main-navigation .sticky-head {
     position: fixed;
     top: 0;
@@ -396,6 +398,18 @@ th {
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
+.hexheader1 {
+   display:block;
+    position: absolute;
+    width: 28%;
+    min-width: 6em;
+    max-width: 14em;
+    overflow: visible;
+    z-index: 4;
+    top: 32px;
+    right: 32px;  
+    
+}
 
 /*--------------------------------------------------------------
 ## Intro
@@ -408,6 +422,13 @@ div {
     width: 100%;
     max-width: none;
     position: relative;
+}
+.page-about {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #242424;
 }
 .page-intro {
     overflow: hidden;
@@ -432,10 +453,43 @@ div {
 }
 
 #hero{
-  background-image:url("images/blackbackground.png");
   background-repeat:no-repeat;
   background-size:cover;
   position:relative;
+}
+.hero1 {
+    background-image:url("images/pinkbackground.png");
+    position: absolute;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.hero2 {
+    background-image:url("images/greenbackground.png");
+    position: absolute;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.hero3 {
+    background-image:url("images/yellowbackground.png");
+    position: absolute;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.hero4 {
+    background-image:url("images/whitebackground.png");
+    position: absolute;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.hero5 {
+    background-image:url("images/blackbackground.png");
+    position: absolute;
+    margin: 0 auto;
+    height: 100vh;
 }
 
 .headertext{
@@ -545,22 +599,6 @@ portfolio-container {
     margin-top: -211px;
     margin-left: -271px;
     font-size: 4em;
-}
-
-}
-.sitea {
-    width: 204px;
-    height: 177px;
-    background-image:url("images/siteahex.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 50%;
-    margin-left: -102px;
-    top: 50%;
-    margin-top: -88.5px !important;
-}
-.my-svg {
-    -webkit-filter: drop-shadow(8px 8px 10px red);
 }
 
 .sitea {
@@ -933,7 +971,7 @@ table {
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
-}
+}  
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -941,6 +979,7 @@ table {
   text-align: right;
   width: 50%;
 }
+
 /*--------------------------------------------------------------
 ## Global
 --------------------------------------------------------------*/
